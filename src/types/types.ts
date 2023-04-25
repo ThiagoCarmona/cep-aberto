@@ -22,7 +22,7 @@ export interface Estado {
 
 //Pelo menos um dos parametros deve ser passado
 export interface TextualOptions {
-  state: string
+  state: State
   city: string
   neighborhood?: string
   logradouro?: string
