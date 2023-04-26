@@ -1,8 +1,10 @@
 import CepAberto from "../src/index"
-import { CepResult, TextualOptions, State, CitiesResult } from '../src/types/types';
+import { TextualOptions, State } from '../src/types/types';
+import { config } from 'dotenv';
+config();
 
 describe('CepAberto', () => {
-  const token = 'd6b7452278644d7bd27c44642e432f96';
+  const token = process.env.API_KEY!;
   const cepAberto = new CepAberto(token);
 
   describe('getCepByNumber', () => {
