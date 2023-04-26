@@ -30,6 +30,12 @@ export default class CepAberto {
     }
   }
 
+  /**
+   * @deprecated
+   * @param lat 
+   * @param lng 
+   * @returns 
+   */
   async getCepCoordinates(lat: string, lng: string): Promise<CepResult | {}> {
     try{
       const { data } = await this.api.get<CepResult>(`/nearest`,{
@@ -44,6 +50,8 @@ export default class CepAberto {
       return {};
     }
   }
+
+  getCepByCoordinates = this.getCepCoordinates;
 
   async searchCep(options: TextualOptions): Promise<CepResult | {message: string }> {
     try{
