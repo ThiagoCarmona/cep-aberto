@@ -4,6 +4,10 @@
   "description": "Biblioteca que permite o consumo dos serviços fornecidos pelo CEP ABERTO",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThiagoCarmona/cep-aberto"
+  },
   "keywords": [
     "Brasil",
     "CEP",
