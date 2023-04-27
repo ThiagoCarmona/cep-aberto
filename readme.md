@@ -7,7 +7,7 @@ This is a Node.js package that provides a simple and straightforward way to acce
 You can install this package using npm:
 
 ```
-npm install cep-aberto
+npm i @thiagocarmona/cep-aberto
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ console.log(address);
 You can get postal code information by coordinates using the `getCepCoordinates` method. It returns a `Promise` that resolves to a `CepResult` object if successful, or an empty object if there was an error.
 
 ```javascript
-const postalCode = await cepAberto.getCepCoordinates('-23.5505', '-46.6333');
+const postalCode = await cepAberto.getCepByCoordinates('-23.5505', '-46.6333');
 console.log(postalCode);
 ```
 
